@@ -1,0 +1,14 @@
+﻿@model HomeIndexModel
+
+@{
+    ViewData["Title"] = "Razor";
+}
+
+<h2>@ViewData["View_Body"]</h2>
+
+<p>@Greeter.Greet(@Model.Greet, @Model.Name)</p>
+
+@section footer{
+    <h3>Is Footer Section</h3>
+}
+

@@ -1,0 +1,34 @@
+﻿@model LayoutModel
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewData["Title"]</title>
+</head>
+<body>
+    <div>
+        @await Html.PartialAsync("_Header")
+        @*
+        @await Html.PartialAsync("~/Views/Shared/_Header.cshtml")
+        *@
+        @await Html.PartialAsync("_Center",Model.Center,new ViewDataDictionary(ViewData){
+                                                            { "Center", "CenterView" }
+                                                        })
+
+        <h1>@ViewData["Layout_Body"]</h1>
+
+        @RenderBody()
+
+        @if (IsSectionDefined("footer"))
+        {
+            @RenderSection("footer", required: false)
+        }
+        else
+        {
+            <em>no find footer section</em>
+        }
+    </div>
+</body>
+</html>
