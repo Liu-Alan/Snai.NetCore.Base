@@ -1,7 +1,10 @@
-CREATE DATABASE ceshi
+DROP DATABASE alan
 ;
 
-USE ceshi
+CREATE DATABASE alan
+;
+
+USE alan
 ;
 
 CREATE TABLE student(
@@ -13,4 +16,4 @@ CREATE TABLE student(
 ;
 
 -- alter table student add primary key pk_student (id)  	
-ALTER TABLE student ADD INDEX ix_name(`name`)  		-- UNIQUE INDEX 唯一索引
+ALTER TABLE student ADD INDEX ix_student_name(`name`)  		-- UNIQUE INDEX 唯一索引
