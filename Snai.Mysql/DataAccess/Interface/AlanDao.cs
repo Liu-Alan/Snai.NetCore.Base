@@ -22,5 +22,29 @@ namespace Snai.Mysql.DataAccess.Interface
             Context.Student.Add(student);
             return Context.SaveChanges() > 0;
         }
+
+        public IEnumerable<Student> GetStudents()
+        {
+            var students = new List<Student>();
+            students.AddRange(Context.Student);
+            return students;
+        }
+
+        public Student GetStudentByID(int id)
+        {
+            return Context.Find<Student>(id);
+        }
+
+        public bool UpdateStudent(Student student)
+        {
+            Context.Update<Student>(student);
+            return Context.SaveChanges() > 0;
+        }
+
+        public bool DeleteStudentByID(int id)
+        {
+            Context.Student.Remove(Context.Find<Student>(id));
+            return Context.SaveChanges() > 0;
+        }
     }
 }
