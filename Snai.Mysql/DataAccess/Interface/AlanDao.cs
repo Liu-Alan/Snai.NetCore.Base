@@ -44,7 +44,6 @@ namespace Snai.Mysql.DataAccess.Interface
         public bool DeleteStudentByID(int id)
         {
             Context.Student.Remove(Context.Find<Student>(id));
-			
             return Context.SaveChanges() > 0;
         }
     }
