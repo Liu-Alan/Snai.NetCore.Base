@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Snai.ReadSettings", "Snai.R
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Snai.Razor", "Snai.Razor\Snai.Razor.csproj", "{CD3E9FB9-3A99-4DF6-A425-4030534D6C51}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Snai.Mysql", "Snai.Mysql\Snai.Mysql.csproj", "{C1687105-E4D6-45EC-A0CC-1B5694D8E903}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Snai.Mysql", "Snai.Mysql\Snai.Mysql.csproj", "{C1687105-E4D6-45EC-A0CC-1B5694D8E903}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
