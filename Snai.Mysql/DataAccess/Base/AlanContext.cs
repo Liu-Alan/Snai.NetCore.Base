@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Snai.Mysql.DataAccess.Base
 {
-    public class AlanContext:DbContext, IAlanContext
+    public class AlanContext:DbContext
     {
         public AlanContext(DbContextOptions<AlanContext> options)
             : base(options)

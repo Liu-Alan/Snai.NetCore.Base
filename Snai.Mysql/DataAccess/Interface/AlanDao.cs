@@ -1,5 +1,6 @@
 ﻿using Snai.Mysql.DataAccess.Base;
 using Snai.Mysql.DataAccess.Implement;
+using Snai.Mysql.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,11 +10,17 @@ namespace Snai.Mysql.DataAccess.Interface
 {
     public class AlanDao: IAlanDao
     {
-        public IAlanContext AlanContext;
+        public AlanContext Context;
 
-        public AlanDao(IAlanContext context)
+        public AlanDao(AlanContext context)
         {
-            AlanContext = context;
+            Context = context;
+        }
+
+        public bool CreateStudent(Student student)
+        {
+            Context.Student.Add(student);
+            return Context.SaveChanges() > 0;
         }
     }
 }

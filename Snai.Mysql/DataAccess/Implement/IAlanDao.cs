@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Snai.Mysql.DataAccess.Implement
 {
-    interface IAlanDao
+    public interface IAlanDao
     {
         bool CreateStudent(Student student);
     }

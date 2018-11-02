@@ -11,6 +11,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Snai.Mysql.DataAccess.Base;
+using Snai.Mysql.DataAccess.Implement;
+using Snai.Mysql.DataAccess.Interface;
 
 namespace Snai.Mysql
 {
@@ -27,7 +29,7 @@ namespace Snai.Mysql
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<AlanContext>(options => options.UseMySQL(Configuration.GetConnectionString("AlanConnection")));
-            services.AddScoped<IAlanContext, AlanContext>();
+            services.AddScoped<IAlanDao, AlanDao>();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
         }
