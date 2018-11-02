@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Snai.Mysql.DataAccess.Implement
+namespace Snai.Mysql.DataAccess.Interface
 {
     public interface IAlanDao
     {

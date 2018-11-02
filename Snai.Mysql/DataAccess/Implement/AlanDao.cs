@@ -1,12 +1,12 @@
 ﻿using Snai.Mysql.DataAccess.Base;
-using Snai.Mysql.DataAccess.Implement;
+using Snai.Mysql.DataAccess.Interface;
 using Snai.Mysql.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Snai.Mysql.DataAccess.Interface
+namespace Snai.Mysql.DataAccess.Implement
 {
     public class AlanDao: IAlanDao
     {

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Snai.Mysql.DataAccess.Implement;
+using Snai.Mysql.DataAccess.Interface;
 using Snai.Mysql.Entities;
 
 namespace Snai.Mysql.Controllers
