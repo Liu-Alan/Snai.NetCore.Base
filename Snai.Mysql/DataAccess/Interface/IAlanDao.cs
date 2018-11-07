@@ -15,7 +15,9 @@ namespace Snai.Mysql.DataAccess.Interface
         Student GetStudentByID(int id);
 
         bool UpdateStudent(Student student);
-		
+
+        bool UpdateNameByID(int id, string name);
+            
         bool DeleteStudentByID(int id);
     }
 }
