@@ -61,9 +61,10 @@ namespace Snai.Mysql.Controllers
 
             if (students != null)
             {
+                names = "";
                 foreach (var s in students)
                 {
-                    names = $"{s.Name} <br />";
+                    names += $"{s.Name} \r\n";
                 }
                     
             }

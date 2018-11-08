@@ -1,10 +1,10 @@
-DROP DATABASE alan
-;
-
 CREATE DATABASE alan
 ;
 
 USE alan
+;
+
+DROP TABLE student
 ;
 
 CREATE TABLE student(
