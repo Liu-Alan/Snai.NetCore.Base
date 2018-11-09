@@ -1,10 +1,7 @@
-CREATE DATABASE alan
+CREATE DATABASE alan CHARACTER SET utf8 COLLATE utf8_general_ci
 ;
 
 USE alan
-;
-
-DROP TABLE student
 ;
 
 CREATE TABLE student(
