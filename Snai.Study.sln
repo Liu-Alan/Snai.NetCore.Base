@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Snai.Razor", "Snai.Razor\Sn
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Snai.Mysql", "Snai.Mysql\Snai.Mysql.csproj", "{C1687105-E4D6-45EC-A0CC-1B5694D8E903}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Snai.Common", "Snai.Common\Snai.Common.csproj", "{CA20DD25-1F6D-4C43-9E45-6C0A9D8A8D37}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{C1687105-E4D6-45EC-A0CC-1B5694D8E903}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C1687105-E4D6-45EC-A0CC-1B5694D8E903}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C1687105-E4D6-45EC-A0CC-1B5694D8E903}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA20DD25-1F6D-4C43-9E45-6C0A9D8A8D37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA20DD25-1F6D-4C43-9E45-6C0A9D8A8D37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA20DD25-1F6D-4C43-9E45-6C0A9D8A8D37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA20DD25-1F6D-4C43-9E45-6C0A9D8A8D37}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
