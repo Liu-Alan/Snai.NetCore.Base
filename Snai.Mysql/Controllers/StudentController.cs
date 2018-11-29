@@ -18,6 +18,7 @@ namespace Snai.Mysql.Controllers
             AlanDao = alanDao;
         }
 
+        //插入数据
         public ActionResult<string> Create(string name, byte sex, int age)
         {
             if (string.IsNullOrEmpty(name.Trim()))
@@ -54,6 +55,7 @@ namespace Snai.Mysql.Controllers
             
         }
 
+        //取全部记录
         public ActionResult<string> Gets()
         {
             var names = "没有数据";
@@ -72,6 +74,7 @@ namespace Snai.Mysql.Controllers
             return names;
         }
 
+        //取某id记录
         public ActionResult<string> Get(int id)
         {
             var name = "没有数据";
@@ -85,6 +88,7 @@ namespace Snai.Mysql.Controllers
             return name;
         }
 
+        //根据id更新整条记录
         public ActionResult<string> Update(int id, string name, byte sex, int age)
         {
             if (id <= 0)
@@ -127,6 +131,7 @@ namespace Snai.Mysql.Controllers
             }
         }
 
+        //根据id更新名称
         public ActionResult<string> UpdateName(int id, string name)
         {
             if (id <= 0)
@@ -151,6 +156,7 @@ namespace Snai.Mysql.Controllers
             }
         }
 
+        //根据id删掉记录
         public ActionResult<string> Delete(int id)
         {
             if (id <= 0)
