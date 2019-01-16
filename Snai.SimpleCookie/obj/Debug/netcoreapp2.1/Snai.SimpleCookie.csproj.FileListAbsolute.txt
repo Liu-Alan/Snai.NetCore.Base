@@ -1,0 +1,13 @@
+D:\学习\DotNet\开发目录\Snai.Study\Snai.SimpleCookie\bin\Debug\netcoreapp2.1\Snai.SimpleCookie.deps.json
+D:\学习\DotNet\开发目录\Snai.Study\Snai.SimpleCookie\bin\Debug\netcoreapp2.1\Snai.SimpleCookie.runtimeconfig.json
+D:\学习\DotNet\开发目录\Snai.Study\Snai.SimpleCookie\bin\Debug\netcoreapp2.1\Snai.SimpleCookie.runtimeconfig.dev.json
+D:\学习\DotNet\开发目录\Snai.Study\Snai.SimpleCookie\bin\Debug\netcoreapp2.1\Snai.SimpleCookie.dll
+D:\学习\DotNet\开发目录\Snai.Study\Snai.SimpleCookie\bin\Debug\netcoreapp2.1\Snai.SimpleCookie.pdb
+D:\学习\DotNet\开发目录\Snai.Study\Snai.SimpleCookie\obj\Debug\netcoreapp2.1\Snai.SimpleCookie.csproj.CoreCompileInputs.cache
+D:\学习\DotNet\开发目录\Snai.Study\Snai.SimpleCookie\obj\Debug\netcoreapp2.1\Snai.SimpleCookie.RazorAssemblyInfo.cache
+D:\学习\DotNet\开发目录\Snai.Study\Snai.SimpleCookie\obj\Debug\netcoreapp2.1\Snai.SimpleCookie.RazorAssemblyInfo.cs
+D:\学习\DotNet\开发目录\Snai.Study\Snai.SimpleCookie\obj\Debug\netcoreapp2.1\Snai.SimpleCookie.AssemblyInfoInputs.cache
+D:\学习\DotNet\开发目录\Snai.Study\Snai.SimpleCookie\obj\Debug\netcoreapp2.1\Snai.SimpleCookie.AssemblyInfo.cs
+D:\学习\DotNet\开发目录\Snai.Study\Snai.SimpleCookie\obj\Debug\netcoreapp2.1\Snai.SimpleCookie.RazorTargetAssemblyInfo.cache
+D:\学习\DotNet\开发目录\Snai.Study\Snai.SimpleCookie\obj\Debug\netcoreapp2.1\Snai.SimpleCookie.dll
+D:\学习\DotNet\开发目录\Snai.Study\Snai.SimpleCookie\obj\Debug\netcoreapp2.1\Snai.SimpleCookie.pdb
