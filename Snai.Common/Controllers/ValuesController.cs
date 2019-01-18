@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Snai.Common.Encrypt;
 using Snai.Common.Extension;
+using Snai.Common.Utils;
 
 namespace Snai.Common.Controllers
 {
@@ -19,6 +20,11 @@ namespace Snai.Common.Controllers
         public ActionResult<string> GetMd5(string source)
         {
             return EncryptMd5.EncryptByte(source);
+        }
+
+        public ActionResult<string> GetRandom()
+        {
+            return RandomUtil.CreateRandom(6);
         }
     }
 }
