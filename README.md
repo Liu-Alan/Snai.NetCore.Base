@@ -4,6 +4,6 @@
 3. Snai.Mysql efcore mysql操作
 4. Snai.Common 常用方法  
     4.1. HttpContextExtension，HttpContext扩展  
-         GetUserIp 取客户Ip
+         GetUserIp 取客户Ip  
     4.2. EncryptMd5，MD5加密
 5. Snai.SimpleCookie Cookie操作，AES加解密存取Cookie
