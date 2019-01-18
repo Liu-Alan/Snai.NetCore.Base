@@ -4,16 +4,19 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Snai.SimpleCookie.Common.Encrypt;
 
 namespace Snai.SimpleCookie.Controllers
 {
     public class CookiesController : ControllerBase
     {
-        public void SetCookie()
+        public void SetCookie(string date)
         {
             Response.ContentType = "text/html;charset=utf-8";
 
-            Response.Cookies.Append("snai.code", "ceshi", new CookieOptions()
+            string cipherText = EncryptAES.Encrypt(date);
+
+            Response.Cookies.Append("snai.code", cipherText, new CookieOptions()
             {
                 HttpOnly = true,
                 Secure = false
@@ -29,8 +32,9 @@ namespace Snai.SimpleCookie.Controllers
             Request.Cookies.TryGetValue("snai.code", out string cookieValue);
             if (!string.IsNullOrEmpty(cookieValue))
             {
-                Response.WriteAsync("Cookie 获取成功！");
-                Response.WriteAsync(cookieValue);
+                string plainText = EncryptAES.Decrypt(cookieValue);
+                Response.WriteAsync(plainText);
+                Response.WriteAsync("\r\n Cookie 获取成功！");
             }
             else
             {

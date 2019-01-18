@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Snai.Mysql", "Snai.Mysql\Sn
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Snai.Common", "Snai.Common\Snai.Common.csproj", "{CA20DD25-1F6D-4C43-9E45-6C0A9D8A8D37}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Snai.SimpleCookie", "Snai.SimpleCookie\Snai.SimpleCookie.csproj", "{3EBF7C7A-8C57-45A3-B744-9DB23AE87329}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Snai.SimpleCookie", "Snai.SimpleCookie\Snai.SimpleCookie.csproj", "{3EBF7C7A-8C57-45A3-B744-9DB23AE87329}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

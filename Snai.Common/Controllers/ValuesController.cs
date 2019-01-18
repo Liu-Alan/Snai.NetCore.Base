@@ -4,18 +4,21 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Snai.Common.Encrypt;
 using Snai.Common.Extension;
 
 namespace Snai.Common.Controllers
 {
-    [Route("api/[controller]")]
-    [ApiController]
-    public class IpController : ControllerBase
+    public class ValuesController : ControllerBase
     {
-        [HttpGet]
-        public ActionResult<string> Get(int id)
+        public ActionResult<string> GetIp()
         {
             return HttpContext.GetUserIp();
+        }
+
+        public ActionResult<string> GetMd5(string source)
+        {
+            return EncryptMd5.EncryptByte(source);
         }
     }
 }
