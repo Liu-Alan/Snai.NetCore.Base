@@ -1,0 +1,19 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <p>
+        请输入验证码：<br><input type="text" id="validateCode" class="form-control" />
+        <img id="imgVerify" src="~/ValidateCode/ValidateCode" alt="看不清？点击更换" onclick="this.src = this.src + '?'+Math.random()" style="vertical-align:middle;" />
+    </p>
+</body>
+</html>
