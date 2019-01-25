@@ -11,9 +11,12 @@
     <title>Index</title>
 </head>
 <body>
-    <p>
-        请输入验证码：<br><input type="text" id="validateCode" class="form-control" />
-        <img id="imgVerify" src="~/ValidateCode/ValidateCode" alt="看不清？点击更换" onclick="this.src = this.src + '?'+Math.random()" style="vertical-align:middle;" />
-    </p>
+    <form id="codeForm" name="codeForm" action="~/ValidateCode/CompareValidateCode" method="post">
+        <p>
+            请输入验证码：<br><input type="text" id="validateCode" name="validateCode" class="form-control" placeholder="请输入验证码" />
+            <img id="imgVerify" src="~/ValidateCode/ValidateCode" alt="看不清？点击更换" onclick="this.src = this.src + '?'+Math.random()" style="vertical-align:middle;" />
+        </p>
+        <p><button type="submit" id="codeSub" name="codeSub" title="提交">提交</button></p>
+    </form>
 </body>
 </html>
