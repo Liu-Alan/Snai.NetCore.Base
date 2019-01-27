@@ -26,5 +26,30 @@ namespace Snai.Common.Controllers
         {
             return RandomUtil.CreateRandom(6);
         }
+
+        public ActionResult<string> GetTimestamp(string datetime)
+        {
+            //Response.ContentType = "text/html;charset=utf-8";
+
+            DateTime dateValue;
+            DateTime.TryParse(datetime, out dateValue);
+            if (dateValue != null)
+            {
+                return DateTimeUtil.DateTimeToUnixTimeStamp(dateValue).ToString();
+            }
+            else
+            {
+                return $"{DateTimeUtil.DateTimeToUnixTimeStamp(DateTime.Now).ToString()}，失败";
+            }
+        }
+
+        public ActionResult<String> GetDateTime(string timestamp)
+        {
+            Response.ContentType = "text/html;charset=utf-8";
+
+            long timestampValue;
+            long.TryParse(timestamp, out timestampValue);
+            return DateTimeUtil.UnixTimeStampToDateTime(timestampValue).ToString();
+        }
     }
 }
