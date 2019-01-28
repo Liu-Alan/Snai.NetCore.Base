@@ -29,11 +29,9 @@ namespace Snai.Common.Controllers
 
         public ActionResult<string> GetTimestamp(string datetime)
         {
-            //Response.ContentType = "text/html;charset=utf-8";
-
             DateTime dateValue;
             DateTime.TryParse(datetime, out dateValue);
-            if (dateValue != null)
+            if (dateValue != null && dateValue > DateTime.MinValue)
             {
                 return DateTimeUtil.DateTimeToUnixTimeStamp(dateValue).ToString();
             }
@@ -45,8 +43,6 @@ namespace Snai.Common.Controllers
 
         public ActionResult<String> GetDateTime(string timestamp)
         {
-            Response.ContentType = "text/html;charset=utf-8";
-
             long timestampValue;
             long.TryParse(timestamp, out timestampValue);
             return DateTimeUtil.UnixTimeStampToDateTime(timestampValue).ToString();
