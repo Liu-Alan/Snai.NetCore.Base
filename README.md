@@ -7,5 +7,6 @@
          GetUserIp 取客户Ip  
     4.2. EncryptMd5，MD5加密  
     4.3. RandomUtil，数字字母组合的随机码 
+    4.4. DateTimeUtil，时间戳转换
 5. Snai.SimpleCookie Cookie操作，AES加解密存取Cookie
 6. Snai.ValidateCode  图片验证码，Session，验证码验证
